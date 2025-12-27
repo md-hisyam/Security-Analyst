@@ -1,6 +1,9 @@
 
+### visit the full project on : https://tryhackme.com/room/introtologs
+
+# Intro
 `````
-Hey Damian,
+Hey Hisyam,
 
 I figured you'd remote into this web server after the call with SecOps regarding Ticket#2023012398704230, and I wanted to give you some additional context about the unusual activity they reported:
 
@@ -20,7 +23,7 @@ Cheers, and I hope this helps!
 `````
 
 
-# Log Collection with rsyslog
+## Log Collection with rsyslog
 1. Ensure rsyslog is installed
 ```
     sudo systemctl status rsyslog
@@ -44,7 +47,7 @@ $FileCreateMode 0644
 
 
 
-# Task Question
+## Task Question
 
 1. Based on the list of log formats in this task, what log format is used by the log file specified in the note from Task?
     Combined
@@ -75,18 +78,19 @@ $FileCreateMode 0644
 access the url and change the filter
 
 answer:
-no date field
+    no date field
 
 9. What is the process of standardising parsed data into a more easily readable and query-able format?
 
 answer:
-Normalisation
+    Normalisation
 
 
 10. What is the process of consolidating normalised logs to enhance the analysis of activities related to a specific IP address?
 
 answer:
-Enrichment
+    Enrichment
+
 
 
 

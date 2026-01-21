@@ -29,7 +29,7 @@ Search & Reporting App is the default interface used to search and analyze the d
 
 
 
-#### **Q3: How many events are returned when we apply the time filter to display events on 04/15/2022 and Time from 08:05 AM to 08:06 AM?**
+### **Q3: How many events are returned when we apply the time filter to display events on 04/15/2022 and Time from 08:05 AM to 08:06 AM?**
 - Here I set the time filter as shown below
 
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/7b0710c4-d79d-4749-92fc-9152e9b8ea0a" />

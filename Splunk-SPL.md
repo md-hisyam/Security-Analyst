@@ -40,7 +40,11 @@ Search & Reporting App is the default interface used to search and analyze the d
 ## Chapter 2: Splunk Search Processing Language Overview
 
 ### **Q1: How many Events are returned when searching for Event ID 1 AND User as *James*?**
+<img width="1919" height="850" alt="image" src="https://github.com/user-attachments/assets/2c59b3bd-309d-4a9e-af5d-f40bf4f08f60" />
+
 ### **Q2: How many events are observed with Destination IP 172.18.39.6 AND destination Port 135?**
+<img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/02d266fb-20b3-4653-86d6-9028e0255ab8" />
+
 ### **Q3: What is the Source IP with highest count returned with this Search query? Search Query: index=windowslogs  Hostname="Salena.Adam" DestinationIp="172.18.38.5"**
 ### **Q4: In the index windowslogs, search for all the events that contain the term cyber how many events returned?**
 ### **Q5: Now search for the term cyber*, how many events are returned?**

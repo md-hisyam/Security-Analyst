@@ -46,8 +46,13 @@ Search & Reporting App is the default interface used to search and analyze the d
 <img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/02d266fb-20b3-4653-86d6-9028e0255ab8" />
 
 ### **Q3: What is the Source IP with highest count returned with this Search query? Search Query: index=windowslogs  Hostname="Salena.Adam" DestinationIp="172.18.38.5"**
+<img width="1919" height="869" alt="image" src="https://github.com/user-attachments/assets/68815861-f964-4d4e-ba2f-1b1e953165b0" />
+
 ### **Q4: In the index windowslogs, search for all the events that contain the term cyber how many events returned?**
+<img width="1914" height="868" alt="image" src="https://github.com/user-attachments/assets/be125ea7-66f7-4484-8a10-11a1bc08da4d" />
+
 ### **Q5: Now search for the term cyber*, how many events are returned?**
+<img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/3ef12599-76d8-4844-aa1e-c9198ebf26e4" />
 
 
 ## Chapter 3: Filtering the Results in SPL

@@ -80,6 +80,27 @@ index=windowslogs EventID=1
 
 
 ## Chapter 5: Transformational Commands in SPL
-### **Q1: List the top 8 Image processes using the top command -  what is the total count of the 6th Image?**
-### **Q2: Using the rare command, identify the user with the least number of activities captured?**
-### **Q3: Create a pie-chart using the chart command - what is the count for the conhost.exe process?**
+
+Transforming commands allow us to change raw event data into useful summaries, statistics, and visualizations. Instead of viewing every individual log, they help analysts aggregate, count, and analyze patterns across many events. Searches that utilize transforming commands are referred to as transforming searches in Splunk.
+
+### **Q1: Use the ``top`` command to query the ``Image`` field. Which ``Image`` field value has the most occurrences?**
+<img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/bd92a836-f260-40c7-86fa-70648a90bb3f" />
+
+### **Q2: Try out the ``iplocation`` command with the ``SourceIp`` field. Which ``Region`` do the IP addresses in your events originate from?**
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/e5af86e6-f240-4920-9a2b-337141b92817" />
+
+### **Q3: Try out this ``lookup query``. Which ``Image`` field value has the highest ``RiskScore``?**
+```
+index=windowslogs
+| lookup image_riskscore Image OUTPUT RiskScore
+| stats count by Image RiskScore
+| sort - RiskScore
+```
+<img width="1919" height="868" alt="image" src="https://github.com/user-attachments/assets/1e6bd1c4-c7c0-4eb3-93fb-f54c80e8af5d" />
+
+
+
+## Chapter 6: Anomaly Detection 
+
+
+

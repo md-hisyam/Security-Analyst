@@ -102,5 +102,13 @@ index=windowslogs
 
 ## Chapter 6: Anomaly Detection 
 
+If I’m investigating a dataset with lots of events (like VPN logins), I need a way to quickly spot outliers—things that don’t fit the normal pattern. For example, if I have around 2,000 VPN login events with fields like time, username, source IP, and source country, and basic field statistics don’t reveal anything unusual, I would shift my approach.
+
+From my point of view, I’d start grouping and counting values to understand what “normal” looks like. I’d likely use something like top or stats count by source_country to see which countries appear most often. Once I know the common countries, I can look for the rare ones—those with very low counts—which could indicate unexpected or suspicious logins.
+
+I might also filter out the known, expected countries and focus only on the uncommon ones. Another approach I’d take is correlating users with countries (e.g., stats count by username, source_country) to see if a specific user suddenly logs in from a country they don’t عادة use.
+
+In short, instead of relying on default statistics, I’d define what “normal” looks like in the data and then actively search for deviations from that baseline.
+
 
 

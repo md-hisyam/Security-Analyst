@@ -1,5 +1,5 @@
 # SPLUNK: Exploring SPL
-This project is part of Tryhackme Labs to learn and explore the basics of the Search Processing Language
+This project is part of Tryhackme Labs to learn and explore the Splunk's Search Processing Language
 
 ## Chapter 1: Search and Reporting App Overview
 Search & Reporting App is the default interface used to search and analyze the data on the Splunk Home page. It has various functionalities that assist analysts in improving the search experience.
@@ -56,13 +56,27 @@ Search & Reporting App is the default interface used to search and analyze the d
 
 
 ## Chapter 3: Filtering the Results in SPL
-### **Q1: What is the third EventID returned against this search query? Search Query: ``index=windowslogs | table _time EventID Hostname SourceName | reverse``**
-### **Q2: Use the dedup command against the Hostname field before the reverse command in the query mentioned in Question 1. What is the first username returned in the Hostname field?**
+### **Q1: Use the ``fields`` command to highlight ``Domain``, ``SourceProcessId``, and ``TargetProcessId``. Which SourceProcessId has the highest value?**
+<img width="1919" height="1063" alt="image" src="https://github.com/user-attachments/assets/db823811-9b68-41f0-a9c3-b320122a714d" />
+
+### **Q2: Try out this query ``index=windowslogs | regex TargetObject="Manager$"``. Which ``TargetObject`` field value contains the highest number of results?**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/ba0eb05c-ed91-4b12-8c15-42a260370bbe" />
+
 
 ## Chapter 4: SPL - Structuring the Search Results
-### **Q1: Using the Reverse command with the search ``query index=windowslogs | table _time EventID Hostname SourceName`` - what is the HostName that comes on top?**
-### **Q2: What is the last EventID returned when the query in question 1 is updated with the tail command?**
-### **Q3: Sort the above query against the SourceName. What is the top SourceName returned?**
+### **Q1: Build a table that highlights the ``EventID``, ``AccountName``, and ``AccountType`` fields. Which ``AccountName`` appears first in your results?**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/6045de81-63b6-45e6-9be1-47a3d7f0705c" />
+
+### **Q2: Append the above query to include the ``reverse`` command. Which ``EventID`` appears first?**
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b2a874e1-6e21-4a4e-95e6-6637c8f41bf2" />
+
+### **Q3: Use the query below to build a timeline of events. What password was given to the user ``A1berto``?**
+```
+index=windowslogs EventID=1
+| table _time ParentProcessId ProcessId ParentCommandLine CommandLine
+| reverse
+```
+<img width="1919" height="1079" alt="Screenshot 2026-04-15 141124" src="https://github.com/user-attachments/assets/3e6a183e-ebbc-43f0-9c80-116964af1f79" />
 
 
 ## Chapter 5: Transformational Commands in SPL

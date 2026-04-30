@@ -1,4 +1,4 @@
-<img width="332" height="68" alt="image" src="https://github.com/user-attachments/assets/8cb80483-fc4a-4090-a5d5-543765468fbd" />Thankyou for visiting my space.. <br>
+Thankyou for visiting my space.. <br>
 This repository focuses on the skills that SOC analyst needs. <br> 
 From digging through logs and triaging alerts to working with teammates and responding to security incidents. <br>
 The goal is to build strong technical and operational foundations for real-world SOC analyst. <br>

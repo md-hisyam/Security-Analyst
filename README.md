@@ -9,8 +9,8 @@ The goal is to build strong technical and operational foundations for real-world
 |-----|------------------------------------|------------------------------------------------|--------------|
 | 1   | Splunk: Exploring SPL              | Search Processing Language (SPL) fundamentals   | ✅ Completed |
 | 2   | Splunk: Setting up a SOC Lab       | Lab setup & log ingestion (Universal Forwarder)| ✅ Completed |
-| 3   | Splunk: Dashboards and Reports     | Alerts, reports, and visualization             | 🟡 In Progress |
-| 4   | Splunk: Data Manipulation          | Parsing & transforming log data                | ⬜ Not Started |
+| 3   | Splunk: Dashboards and Reports     | Alerts, reports, and visualization             | ✅ Completed |
+| 4   | Splunk: Data Manipulation          | Parsing & transforming log data                | ✅ Completed |
 | 5   | Fixit Challenge                    | Log parsing issue & investigation              | ⬜ Not Started |
 
 ### ✅ Status Legend

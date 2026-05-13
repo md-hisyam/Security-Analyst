@@ -18,14 +18,14 @@ This module was adapted from TryHackMe labs.
 ### Security Engineer
  No | Module Name | Description | Status |
 |----|-------------|-------------|--------|
-| 1 | Secure Network Architecture | Learn about and implement security best practices for network environments. | ✅ |
-| 2 | Linux System Hardening | Learn how to improve the security posture of your Linux systems. | ✅ |
-| 3 | Microsoft Windows Hardening | Learn key attack vectors used by hackers and how to protect yourself using different hardening techniques. | ✅ |
-| 4 | Active Directory Hardening | Learn basic concepts regarding Active Directory attacks and mitigation measures. | ✅ |
-| 5 | Network Device Hardening | Learn techniques for securing and protecting network devices from potential threats and attacks. | ✅ |
-| 6 | Network Security Protocols | Learn about secure network protocols at the different layers of the OSI model. | ✅ |
-| 7 | Virtualization and Containers | Introduction to common virtualization technologies and applications. | ✅ |
-| 8 | Intro to Cloud Security | Learn fundamental concepts regarding securing a cloud environment. | ✅ |
+| 1 | Secure Network Architecture | Learn about and implement security best practices for network environments. | ✅ Completed |
+| 2 | Linux System Hardening | Learn how to improve the security posture of your Linux systems. | ✅ Completed |
+| 3 | Microsoft Windows Hardening | Learn key attack vectors used by hackers and how to protect yourself using different hardening techniques. | ✅ Completed |
+| 4 | Active Directory Hardening | Learn basic concepts regarding Active Directory attacks and mitigation measures. | 🟡 In Progress |
+| 5 | Network Device Hardening | Learn techniques for securing and protecting network devices from potential threats and attacks. | 🟡 In Progress |
+| 6 | Network Security Protocols | Learn about secure network protocols at the different layers of the OSI model. | 🟡 In Progress |
+| 7 | Virtualization and Containers | Introduction to common virtualization technologies and applications. | 🟡 In Progress |
+| 8 | Intro to Cloud Security | Learn fundamental concepts regarding securing a cloud environment. | ✅ Completed |
 | 9 | Auditing and Monitoring | Learn about auditing, monitoring, logging, and SIEM. | 🟡 55% |
 
 ### ✅ Status Legend
